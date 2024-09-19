@@ -111,4 +111,53 @@ for numero in range(0, 51, 5):
     print(numero, end=" ")
 
 # Range
-list(range(0,10))
+print(list(range(10)))
+
+for numero in range(0,11):
+    print(numero, end=" ")
+
+for numero in range(0, 51, 5):         # start, stop e step
+    print(numero, end="")
+
+## While
+
+opcao = -1
+
+while opcao != 0:
+    opcao = int(input("[1] Sacar \n[2] Extrato \n[0] Sair \n: "))
+
+    if opcao == 1:
+        print("Sacando...")
+    elif opcao == 2:
+        print("Exibindo o extrato...")
+else:
+    print("Obrigado por usar nosso sistema bancário, até logo!")
+
+# Break    
+
+While True:
+
+numero = int(input("Informe o número: "))
+
+if numero == 10:
+    break
+
+print(numero)
+
+while True:
+    numero = int(input("Informe o número: "))
+    
+    if numero == 10:
+        break
+    
+    print(numero, end=" ")
+
+
+# Continue
+
+for numero in range(100):
+    if numero %2 != 0:
+        continue
+
+    print(numero, end=" ")
+
